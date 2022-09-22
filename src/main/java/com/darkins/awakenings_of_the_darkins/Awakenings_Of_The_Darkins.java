@@ -1,5 +1,6 @@
 package com.darkins.awakenings_of_the_darkins;
 
+import com.darkins.awakenings_of_the_darkins.item.ModItems;
 import com.mojang.logging.LogUtils;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -20,6 +21,8 @@ public class Awakenings_Of_The_Darkins {
     public Awakenings_Of_The_Darkins()
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        ModItems.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
