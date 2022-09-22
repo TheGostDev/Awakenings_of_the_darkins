@@ -1,5 +1,7 @@
 package com.darkins.awakenings_of_the_darkins;
 
+import com.darkins.awakenings_of_the_darkins.fluid.ModFluidTypes;
+import com.darkins.awakenings_of_the_darkins.fluid.ModFluids;
 import com.darkins.awakenings_of_the_darkins.item.ModItems;
 import com.mojang.logging.LogUtils;
 import net.minecraftforge.common.MinecraftForge;
@@ -23,6 +25,9 @@ public class Awakenings_Of_The_Darkins {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(modEventBus);
+
+        ModFluidTypes.register(modEventBus);
+        ModFluids.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
