@@ -7,7 +7,7 @@ public class ModCreativeTab {
     public static final CreativeModeTab AWAKENINGS_OF_THE_DARKINS = new CreativeModeTab("awakenings_of_the_darkins") {
         @Override
         public ItemStack makeIcon() {
-            return new ItemStack(ModItems.SILICIUM.get());
+            return new ItemStack(ModItems.SILICON.get());
         }
     };
 }
