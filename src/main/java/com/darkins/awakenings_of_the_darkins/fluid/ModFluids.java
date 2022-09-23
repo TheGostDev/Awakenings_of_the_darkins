@@ -15,7 +15,6 @@ public class ModFluids {
     public static final DeferredRegister<Fluid> FLUIDS =
             DeferredRegister.create(ForgeRegistries.FLUIDS, Awakenings_Of_The_Darkins.MOD_ID);
 
-
     public static final RegistryObject<FlowingFluid> SOURCE_SILICON_WATER = FLUIDS.register("silicon_water_fluid",
             () -> new ForgeFlowingFluid.Source(ModFluids.SILICON_WATER_FLUID_PROPERTIES));
     public static final RegistryObject<FlowingFluid> FLOWING_SILICON_WATER = FLUIDS.register("flowing_silicon_water",
