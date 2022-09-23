@@ -24,7 +24,8 @@ public class ModItems {
             () -> new Item(new Item.Properties().tab(ModCreativeTab.AWAKENINGS_OF_THE_DARKINS).stacksTo(1)));
 
     public static final RegistryObject<Item> SILICON_BUCKET = ITEMS.register("silicon_bucket",
-            () -> new BucketItem(ModFluids.SOURCE_SILICON_WATER ,new Item.Properties().tab(ModCreativeTab.AWAKENINGS_OF_THE_DARKINS).craftRemainder(Items.BUCKET).stacksTo(1)));
+            () -> new BucketItem(ModFluids.SOURCE_SILICON_WATER,
+                    new Item.Properties().tab(ModCreativeTab.AWAKENINGS_OF_THE_DARKINS).craftRemainder(Items.BUCKET).stacksTo(1)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

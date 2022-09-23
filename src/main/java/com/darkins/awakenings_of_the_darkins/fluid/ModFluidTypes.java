@@ -12,9 +12,9 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
 public class ModFluidTypes {
-    public static final ResourceLocation SILICON_STILL_RL = new ResourceLocation("block/silicon_still");
-    public static final ResourceLocation SILICON_FLOWING_RL = new ResourceLocation("block/silicon_flow");
-    public static final ResourceLocation SILICON_OVERLAY_RL = new ResourceLocation("misc/in_silicon_water");
+    public static final ResourceLocation SILICON_STILL_RL = new ResourceLocation(Awakenings_Of_The_Darkins.MOD_ID,"block/silicon_still");
+    public static final ResourceLocation SILICON_FLOWING_RL = new ResourceLocation(Awakenings_Of_The_Darkins.MOD_ID,"block/silicon_flow");
+    public static final ResourceLocation SILICON_OVERLAY_RL = new ResourceLocation(Awakenings_Of_The_Darkins.MOD_ID, "misc/in_silicon_water");
 
     public final static DeferredRegister<FluidType> FLUID_TYPES =
             DeferredRegister.create(ForgeRegistries.Keys.FLUID_TYPES, Awakenings_Of_The_Darkins.MOD_ID);

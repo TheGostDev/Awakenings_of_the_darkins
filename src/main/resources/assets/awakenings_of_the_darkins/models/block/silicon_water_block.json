@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "awakenings_of_the_darkins:block/silicon_water_block"
+  }
+}
