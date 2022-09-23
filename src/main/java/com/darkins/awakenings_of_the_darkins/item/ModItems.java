@@ -1,7 +1,10 @@
 package com.darkins.awakenings_of_the_darkins.item;
 
 import com.darkins.awakenings_of_the_darkins.Awakenings_Of_The_Darkins;
+import com.darkins.awakenings_of_the_darkins.fluid.ModFluids;
+import net.minecraft.world.item.BucketItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Items;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -21,7 +24,7 @@ public class ModItems {
             () -> new Item(new Item.Properties().tab(ModCreativeTab.AWAKENINGS_OF_THE_DARKINS).stacksTo(1)));
 
     public static final RegistryObject<Item> SILICON_BUCKET = ITEMS.register("silicon_bucket",
-            () -> new Item(new Item.Properties().tab(ModCreativeTab.AWAKENINGS_OF_THE_DARKINS).stacksTo(1)));
+            () -> new BucketItem(ModFluids.SOURCE_SILICON_WATER ,new Item.Properties().tab(ModCreativeTab.AWAKENINGS_OF_THE_DARKINS).craftRemainder(Items.BUCKET).stacksTo(1)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

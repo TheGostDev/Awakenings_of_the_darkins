@@ -1,6 +1,8 @@
 package com.darkins.awakenings_of_the_darkins.fluid;
 
 import com.darkins.awakenings_of_the_darkins.Awakenings_Of_The_Darkins;
+import com.darkins.awakenings_of_the_darkins.block.ModBlocks;
+import com.darkins.awakenings_of_the_darkins.item.ModItems;
 import net.minecraft.world.level.material.FlowingFluid;
 import net.minecraft.world.level.material.Fluid;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -22,8 +24,8 @@ public class ModFluids {
 
     public static final ForgeFlowingFluid.Properties SILICON_WATER_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             ModFluidTypes.SILICON_WATER_FLUID_TYPE, SOURCE_SILICON_WATER, FLOWING_SILICON_WATER)
-            .slopeFindDistance(2).levelDecreasePerBlock(2).block().bucket();
-    )
+            .slopeFindDistance(2).levelDecreasePerBlock(2).block(ModBlocks.SILICON_WATER_BLOCK)
+            .bucket(ModItems.SILICON_BUCKET);
 
     public static void register(IEventBus eventBus) {
         FLUIDS.register(eventBus);

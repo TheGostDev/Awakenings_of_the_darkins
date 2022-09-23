@@ -12,8 +12,8 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
 public class ModFluidTypes {
-    public static final ResourceLocation WATER_STILL_RL = new ResourceLocation("block/silicon_still");
-    public static final ResourceLocation WATER_FLOWING_RL = new ResourceLocation("block/silicon_flow");
+    public static final ResourceLocation SILICON_STILL_RL = new ResourceLocation("block/silicon_still");
+    public static final ResourceLocation SILICON_FLOWING_RL = new ResourceLocation("block/silicon_flow");
     public static final ResourceLocation SILICON_OVERLAY_RL = new ResourceLocation("misc/in_silicon_water");
 
     public final static DeferredRegister<FluidType> FLUID_TYPES =
@@ -24,7 +24,7 @@ public class ModFluidTypes {
                     SoundEvents.HONEY_DRINK));
 
     private static RegistryObject<FluidType> register(String name, FluidType.Properties properties) {
-        return FLUID_TYPES.register(name, () -> new BaseFluidType(WATER_STILL_RL, WATER_FLOWING_RL, SILICON_OVERLAY_RL,
+        return FLUID_TYPES.register(name, () -> new BaseFluidType(SILICON_STILL_RL, SILICON_FLOWING_RL, SILICON_OVERLAY_RL,
                 0x5f5f6e, new Vector3f(224f / 255f, 56f / 255f, 208f / 255f), properties));
     }
 

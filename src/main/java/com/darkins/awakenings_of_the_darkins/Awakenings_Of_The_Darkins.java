@@ -4,6 +4,8 @@ import com.darkins.awakenings_of_the_darkins.fluid.ModFluidTypes;
 import com.darkins.awakenings_of_the_darkins.fluid.ModFluids;
 import com.darkins.awakenings_of_the_darkins.item.ModItems;
 import com.mojang.logging.LogUtils;
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -43,7 +45,8 @@ public class Awakenings_Of_The_Darkins {
     {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
-
+            ItemBlockRenderTypes.setRenderLayer(ModFluids.SOURCE_SILICON_WATER.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(ModFluids.FLOWING_SILICON_WATER.get(), RenderType.translucent());
         }
     }
 }
