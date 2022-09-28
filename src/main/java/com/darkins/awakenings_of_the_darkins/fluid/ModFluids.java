@@ -23,7 +23,7 @@ public class ModFluids {
 
     public static final ForgeFlowingFluid.Properties SILICON_WATER_FLUID_PROPERTIES = new ForgeFlowingFluid.Properties(
             ModFluidTypes.SILICON_WATER_FLUID_TYPE, SOURCE_SILICON_WATER, FLOWING_SILICON_WATER)
-            .slopeFindDistance(2).levelDecreasePerBlock(2).block(ModBlocks.SILICON_WATER_BLOCK)
+            .slopeFindDistance(7).levelDecreasePerBlock(1).block(ModBlocks.SILICON_WATER_BLOCK)
             .bucket(ModItems.SILICON_BUCKET);
 
     public static void register(IEventBus eventBus) {

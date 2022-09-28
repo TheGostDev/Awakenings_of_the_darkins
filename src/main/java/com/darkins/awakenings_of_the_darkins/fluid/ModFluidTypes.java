@@ -20,12 +20,12 @@ public class ModFluidTypes {
             DeferredRegister.create(ForgeRegistries.Keys.FLUID_TYPES, Awakenings_Of_The_Darkins.MOD_ID);
 
     public static final RegistryObject<FluidType> SILICON_WATER_FLUID_TYPE = register("silicon_water_fluid",
-            FluidType.Properties.create().lightLevel(2).density(15).viscosity(5).sound(SoundAction.get("drink"),
+            FluidType.Properties.create().lightLevel(2).density(10).viscosity(3).sound(SoundAction.get("drink"),
                     SoundEvents.HONEY_DRINK));
 
     private static RegistryObject<FluidType> register(String name, FluidType.Properties properties) {
         return FLUID_TYPES.register(name, () -> new BaseFluidType(SILICON_STILL_RL, SILICON_FLOWING_RL, SILICON_OVERLAY_RL,
-                0x5f5f6e, new Vector3f(224f / 255f, 56f / 255f, 208f / 255f), properties));
+                0xD9FFFFFF, new Vector3f(161f / 255f, 158f / 255f, 156f / 255f), properties));
     }
 
     public static void register(IEventBus eventBus) {
