@@ -4,6 +4,8 @@ import com.darkins.awakenings_of_the_darkins.block.ModBlocks;
 import com.darkins.awakenings_of_the_darkins.fluid.ModFluidTypes;
 import com.darkins.awakenings_of_the_darkins.fluid.ModFluids;
 import com.darkins.awakenings_of_the_darkins.item.ModItems;
+import com.darkins.awakenings_of_the_darkins.world.feature.ModConfigureFeatures;
+import com.darkins.awakenings_of_the_darkins.world.feature.ModPlacedFeatures;
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
@@ -32,6 +34,9 @@ public class Awakenings_Of_The_Darkins {
 
         ModFluidTypes.register(modEventBus);
         ModFluids.register(modEventBus);
+
+        ModConfigureFeatures.register(modEventBus);
+        ModPlacedFeatures.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
