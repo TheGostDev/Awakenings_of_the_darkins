@@ -15,13 +15,13 @@ public class ModItems {
             DeferredRegister.create(ForgeRegistries.ITEMS, Awakenings_Of_The_Darkins.MOD_ID);
 
     public static final RegistryObject<Item> RAW_SILICON = ITEMS.register("raw_silicon",
-            () -> new Item(new Item.Properties().tab(ModCreativeTab.AWAKENINGS_OF_THE_DARKINS).stacksTo(1)));
+            () -> new Item(new Item.Properties().tab(ModCreativeTab.AWAKENINGS_OF_THE_DARKINS)));
 
     public static final RegistryObject<Item> SILICON = ITEMS.register("silicon",
-            () -> new Item(new Item.Properties().tab(ModCreativeTab.AWAKENINGS_OF_THE_DARKINS).stacksTo(1)));
+            () -> new Item(new Item.Properties().tab(ModCreativeTab.AWAKENINGS_OF_THE_DARKINS)));
 
     public static final RegistryObject<Item> SILICON_PLATE = ITEMS.register("silicon_plate",
-            () -> new Item(new Item.Properties().tab(ModCreativeTab.AWAKENINGS_OF_THE_DARKINS).stacksTo(1)));
+            () -> new Item(new Item.Properties().tab(ModCreativeTab.AWAKENINGS_OF_THE_DARKINS)));
 
     public static final RegistryObject<Item> SILICON_BUCKET = ITEMS.register("silicon_bucket",
             () -> new BucketItem(ModFluids.SOURCE_SILICON_WATER,
