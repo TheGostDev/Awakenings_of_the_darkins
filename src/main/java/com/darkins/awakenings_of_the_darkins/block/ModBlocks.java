@@ -26,12 +26,12 @@ public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, Awakenings_Of_The_Darkins.MOD_ID);
 
-    public static final RegistryObject<Block> SILICIUM_ORE = registerBlock("silicium_ore",
+    public static final RegistryObject<Block> SILICON_ORE = registerBlock("silicon_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(3.0f).requiresCorrectToolForDrops(),
                     UniformInt.of(2,4)), ModCreativeTab.AWAKENINGS_OF_THE_DARKINS);
 
-    public static final RegistryObject<Block> DEEPSLATE_SILICIUM_ORE = registerBlock("deepslate_silicium_ore",
+    public static final RegistryObject<Block> DEEPSLATE_SILICON_ORE = registerBlock("deepslate_silicon_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(3.0f).requiresCorrectToolForDrops(),
                     UniformInt.of(2,4)), ModCreativeTab.AWAKENINGS_OF_THE_DARKINS);

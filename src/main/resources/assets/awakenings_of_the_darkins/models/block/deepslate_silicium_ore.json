@@ -1,6 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "awakenings_of_the_darkins:block/deepslate_silicium_ore"
-  }
-}

@@ -4,8 +4,8 @@
   "item.awakenings_of_the_darkins.silicon_plate": "Silicon Plate",
   "item.awakenings_of_the_darkins.silicon_bucket": "Silicon Bucket",
 
-  "block.awakenings_of_the_darkins.silicium_ore": "Silicium Ore",
-  "block.awakenings_of_the_darkins.deepslate.silicium_ore": "Deepslate Silicium Ore",
+  "block.awakenings_of_the_darkins.silicon_ore": "Silicon Ore",
+  "block.awakenings_of_the_darkins.deepslate_silicon_ore": "Deepslate Silicon Ore",
 
   "itemGroup.awakenings_of_the_darkins": "Awakenings Of The Darkins"
 }

@@ -1,6 +1,6 @@
 {
   "type": "forge:add_features",
   "biomes": "#minecraft:is_overworld",
-  "features": "awakenings_of_the_darkins:silicium_ore_placed",
+  "features": "awakenings_of_the_darkins:silicon_ore_placed",
   "step": "underground_ores"
 }
