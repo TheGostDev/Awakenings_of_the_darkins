@@ -20,6 +20,13 @@ public class SiliconFluid extends LiquidBlock {
     }
 
 
+    /*
+
+    Ajouter l'effet Silicium - Eau
+    Modif Effet Poison VoxelShape -> Silicium (Render Block =/ Liquid texture)
+
+     */
+
     @Override
     public void stepOn(Level level, BlockPos pos, BlockState state, Entity entity) {
         if(entity instanceof LivingEntity livingEntity) {
