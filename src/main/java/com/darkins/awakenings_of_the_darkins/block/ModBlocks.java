@@ -2,6 +2,7 @@ package com.darkins.awakenings_of_the_darkins.block;
 
 import com.darkins.awakenings_of_the_darkins.Awakenings_Of_The_Darkins;
 import com.darkins.awakenings_of_the_darkins.fluid.ModFluids;
+import com.darkins.awakenings_of_the_darkins.fluid.custom.SiliconFluid;
 import com.darkins.awakenings_of_the_darkins.item.ModCreativeTab;
 import com.darkins.awakenings_of_the_darkins.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
@@ -37,7 +38,7 @@ public class ModBlocks {
                     UniformInt.of(2,4)), ModCreativeTab.AWAKENINGS_OF_THE_DARKINS);
 
     public static final RegistryObject<LiquidBlock> SILICON_WATER_BLOCK = BLOCKS.register("silicon_water_block",
-            () -> new LiquidBlock(ModFluids.SOURCE_SILICON_WATER, BlockBehaviour.Properties.copy(Blocks.WATER)));
+            () -> new SiliconFluid(ModFluids.SOURCE_SILICON_WATER, BlockBehaviour.Properties.copy(Blocks.WATER)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
