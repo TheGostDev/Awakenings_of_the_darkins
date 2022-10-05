@@ -17,7 +17,7 @@ public class ModPlacedFeatures {
     public static final RegistryObject<PlacedFeature> SILICON_ORE_PLACED = PLACED_FEATURE.register("silicon_ore_placed",
             () -> new PlacedFeature(ModConfigureFeatures.SILICON_ORE.getHolder().get(),
                     commonOrePlacement(15, //Veins per chunk
-                            HeightRangePlacement.triangle(VerticalAnchor.aboveBottom(-80), VerticalAnchor.aboveBottom(80)))));
+                            HeightRangePlacement.triangle(VerticalAnchor.aboveBottom(-80), VerticalAnchor.aboveBottom(20)))));
 
     public static List<PlacementModifier> orePlacement(PlacementModifier placementModifier, PlacementModifier modifier) {
         return List.of(placementModifier, InSquarePlacement.spread(), modifier, BiomeFilter.biome());
