@@ -40,6 +40,10 @@ public class ModBlocks {
     public static final RegistryObject<LiquidBlock> SILICON_WATER_BLOCK = BLOCKS.register("silicon_water_block",
             () -> new SiliconFluid(ModFluids.SOURCE_SILICON_WATER, BlockBehaviour.Properties.copy(Blocks.WATER)));
 
+    public static final RegistryObject<Block> SILICON_BLOCK = registerBlock("silicon_block",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(3.0F).requiresCorrectToolForDrops()), ModCreativeTab.AWAKENINGS_OF_THE_DARKINS);
+
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn, tab);
