@@ -25,12 +25,6 @@ public class Awakenings_Of_The_Darkins {
     public static final String MOD_ID = "awakenings_of_the_darkins";
     private static final Logger LOGGER = LogUtils.getLogger();
 
-    /*
-
-    Le texte du chalet 134 (pcq il est chiant)
-
-     */
-
     public Awakenings_Of_The_Darkins()
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
