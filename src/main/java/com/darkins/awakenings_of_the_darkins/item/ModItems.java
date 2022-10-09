@@ -2,13 +2,14 @@ package com.darkins.awakenings_of_the_darkins.item;
 
 import com.darkins.awakenings_of_the_darkins.Awakenings_Of_The_Darkins;
 import com.darkins.awakenings_of_the_darkins.fluid.ModFluids;
-import net.minecraft.world.item.BucketItem;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Items;
+import com.darkins.awakenings_of_the_darkins.sounds.SoundInit;
+import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+
+import java.util.function.Supplier;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
@@ -26,6 +27,9 @@ public class ModItems {
     public static final RegistryObject<Item> SILICON_BUCKET = ITEMS.register("silicon_bucket",
             () -> new BucketItem(ModFluids.SOURCE_SILICON_WATER,
                     new Item.Properties().tab(ModCreativeTab.AWAKENINGS_OF_THE_DARKINS).craftRemainder(Items.BUCKET).stacksTo(1)));
+
+    public static final RegistryObject<Item> MUSIC_DISC_IDOL = ITEMS.register("music_disc_idol",
+            () -> new RecordItem(1, SoundInit.MUSIC_DISC_IDOL, (new Item.Properties()).stacksTo(1).tab(ModCreativeTab.AWAKENINGS_OF_THE_DARKINS).rarity(Rarity.RARE), 178));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

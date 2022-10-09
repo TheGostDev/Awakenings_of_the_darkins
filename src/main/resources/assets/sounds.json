@@ -1,0 +1,10 @@
+{
+  "music_disc_idol": {
+    "sounds": [
+      {
+        "name": "awakenings_of_the_darkins:records/idol",
+        "stream": true
+      }
+    ]
+  }
+}

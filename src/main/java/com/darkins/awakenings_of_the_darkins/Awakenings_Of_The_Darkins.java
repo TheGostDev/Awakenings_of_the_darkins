@@ -4,6 +4,7 @@ import com.darkins.awakenings_of_the_darkins.block.ModBlocks;
 import com.darkins.awakenings_of_the_darkins.fluid.ModFluidTypes;
 import com.darkins.awakenings_of_the_darkins.fluid.ModFluids;
 import com.darkins.awakenings_of_the_darkins.item.ModItems;
+import com.darkins.awakenings_of_the_darkins.sounds.SoundInit;
 import com.darkins.awakenings_of_the_darkins.world.feature.ModConfigureFeatures;
 import com.darkins.awakenings_of_the_darkins.world.feature.ModPlacedFeatures;
 import com.mojang.logging.LogUtils;
@@ -37,6 +38,8 @@ public class Awakenings_Of_The_Darkins {
 
         ModConfigureFeatures.register(modEventBus);
         ModPlacedFeatures.register(modEventBus);
+
+        SoundInit.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 

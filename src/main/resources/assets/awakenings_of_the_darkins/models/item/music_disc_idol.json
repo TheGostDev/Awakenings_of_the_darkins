@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "awakenings_of_the_darkins:item/music_disc_idol"
+  }
+}
